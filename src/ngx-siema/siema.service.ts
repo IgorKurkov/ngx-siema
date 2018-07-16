@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
-import 'rxjs/add/operator/publish';
+import { Observable, BehaviorSubject, ReplaySubject } from 'rxjs';
+import { publish, refCount } from 'rxjs/operators';
 
 const next$ = new ReplaySubject(1);
 const prev$ = new ReplaySubject(1);
@@ -72,38 +70,38 @@ export class NgxSiemaService {
   }
 
   onNext(): Observable<{ selector: string, numbers: number }> {
-    return next$.publish().refCount();
+    return next$.pipe(publish(), refCount());
   }
 
   onPrev(): Observable<{ selector: string, numbers: number }> {
-    return prev$.publish().refCount();
+    return prev$.pipe(publish(), refCount());
   }
 
   onGoTo(): Observable<{ selector: string, index: number }> {
-    return goTo$.publish().refCount();
+    return goTo$.pipe(publish(), refCount());
   }
 
   onRemove(): Observable<{ selector: string, index: number }> {
-    return remove$.publish().refCount();
+    return remove$.pipe(publish(), refCount());
   }
 
   onInsert(): Observable<{ selector: string, item: any, index: number }> {
-    return insert$.publish().refCount();
+    return insert$.pipe(publish(), refCount());
   }
 
   onPrepend(): Observable<{ selector: string, item: any }> {
-    return prepend$.publish().refCount();
+    return prepend$.pipe(publish(), refCount());
   }
 
   onAppend(): Observable<{ selector: string, item: any }> {
-    return append$.publish().refCount();
+    return append$.pipe(publish(), refCount());
   }
 
   onDestroy(): Observable<{ selector: string }> {
-    return destroy$.publish().refCount();
+    return destroy$.pipe(publish(), refCount());
   }
 
   onCurrentSlide(): Observable<{ selector: string }> {
-    return currentSlide$.publish().refCount();
+    return currentSlide$.pipe(publish(), refCount());
   }
 }
