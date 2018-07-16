@@ -1,5 +1,6 @@
 {
   "name": "ngx-siema",
+  "version": "6.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
