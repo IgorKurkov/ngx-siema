@@ -10,7 +10,7 @@
     "build:npm": "rimraf lib && ngc -p tsconfig.publish.es6.json && rollup -c rollup.publish.config.js && npm run postbuild:npm",
     "postbuild:npm": "cp src/ngx-siema/package.json LICENSE README.md CHANGELOG.md lib/",
     "test": "ng test",
-    "lint": "ng lint --type-check",
+    "lint": "ng lint ngx-siema --type-check",
     "e2e": "ng e2e",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "prepush": "npm run lint"
