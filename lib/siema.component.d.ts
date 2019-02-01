@@ -50,5 +50,5 @@ export declare class NgxSiemaComponent implements AfterViewInit, OnInit, OnDestr
     onAppend(item: any): void;
     onDestroy(restoreMarkup?: boolean): void;
     onCurrentSlide(): void;
-    private compareSelectors(selector);
+    private compareSelectors;
 }
