@@ -2,6 +2,8 @@
 
 # ngx-siema
 
+**THIS REPOSITORY IS NO LONGER IN USE.**
+
 [Siema](https://pawelgrzybek.com/siema/) - Lightweight and simple carousel with no dependencies.
 
 ## Installation
