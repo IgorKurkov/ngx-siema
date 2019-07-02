@@ -1,3 +1,17 @@
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/lexzhukov/ngx-siema/compare/6.0.0...7.0.0) (2019-02-01)
+
+### Features
+
+* **component:** update for aot and angular 7
+
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/lexzhukov/ngx-siema/compare/2.0.1...6.0.0) (2018-07-17)
+
+### Features
+
+* **component:** update angular cli, angular, and rxjs for Angular 6
+
 <a name="2.0.1"></a>
 # [2.0.1](https://github.com/lexzhukov/ngx-siema/compare/2.0.0...2.0.1) (2017-08-19)
 

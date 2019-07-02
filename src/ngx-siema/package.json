@@ -1,11 +1,11 @@
 {
-  "name": "ngx-siema",
-  "version": "6.0.0",
+  "name": "@kurkov87/ngx-siema",
+  "version": "7.0.0",
   "description": "Lightweight and simple carousel with no dependencies.",
   "main": "bundles/ngx-siema.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "repository": "https://github.com/lexzhukov/ngx-siema.git",
+  "repository": "https://github.com/IgorKurkov/ngx-siema.git",
   "keywords": [
     "angular",
     "typescript",
@@ -13,13 +13,13 @@
     "component",
     "carousel"
   ],
-  "author": "Alexander Zhukov <lexzhukovpro@gmail.com>",
+  "author": "Alexander Zhukov <lexzhukovpro@gmail.com>, Igor Kurkov <kurkov87@gmail.com>",
   "license": "MIT",
   "bugs": "https://github.com/lexzhukov/ngx-siema/issues",
   "homepage": "https://github.com/lexzhukov/ngx-siema#readme",
   "peerDependencies": {
-    "@angular/core": "^6.0.0",
-    "@angular/common": "^6.0.0"
+    "@angular/core": "^7.0.0",
+    "@angular/common": "^7.0.0"
   },
   "dependencies": {
     "siema": "^1.4.6"
