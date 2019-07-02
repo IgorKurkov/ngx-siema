@@ -16,7 +16,9 @@
     "lint": "ng lint ngx-siema --type-check",
     "e2e": "ng e2e",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "publish": "npm publish lib --access=public"
+
   },
   "dependencies": {
     "@angular/animations": "^7.2.3",
